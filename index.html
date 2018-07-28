@@ -3,9 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>vueResource</title>
-	<link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-	<script src="./node_modules/vue/dist/vue.min.js"></script>
-	<script src="./node_modules/vue-resource/dist/vue-resource.min.js"></script>
+
 </head>
 <body>
 	<div id="app">
@@ -18,26 +16,7 @@
 		<a href="" class="btn btn-primary">jsonp请求</a>
 	</div>
 
-<script>
-	     window.onload = function(){
-            var vm = new Vue({
-                el:'#box',
-                data:{
-                    msg:'Hello World!',
-                },
-                methods:{
-                    get:function(){
-                        //发送get请求
-                        this.$http.get('package.json').then(function(res){
-                            alert(res.data);    
-                        },function(){
-                            alert('请求失败处理');   //失败处理
-                        });
-                    }
-                }
-            });
-        }
-</script>
+
 </body>
 </html>
 
